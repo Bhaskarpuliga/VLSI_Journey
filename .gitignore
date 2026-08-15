@@ -1,0 +1,56 @@
+# --- EDA Simulation & Waveform Dumps ---
+*.vcd
+*.vpd
+*.fsdb
+*.wlf
+*.shm/
+*.dsn
+*.trn
+
+# --- Simulator & Tool Outputs (ModelSim, Questa, Vivado, Icarus, Verilator) ---
+# Icarus Verilog
+*.vvp
+*.out
+
+# ModelSim / QuestaSim
+work/
+transcript
+vsim.wlf
+*.vstf
+
+# Xilinx / Vivado
+*.jou
+*.log
+*.pb
+*.str
+.Xil/
+*.dcp
+*.bit
+*.bin
+*.ltx
+*.hw/
+*.ip_user_files/
+
+# Synopsys (Design Compiler, VCS)
+simv*
+csrc/
+*.daidir/
+*.key
+synopsys_sim.setup
+
+# Cadence (Incisive, Xcelium, Innovus)
+INCA_libs/
+xcelium.d/
+*.history
+
+# --- OS / Editor Artifacts ---
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
