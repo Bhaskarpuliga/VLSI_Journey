@@ -1,4 +1,4 @@
-module ripple_carry_adder(input [3:0] a_rca,[3:0] b_rca, input cin,
+module ripple_carry_adder(input [3:0] a_rca,input [3:0] b_rca, input cin,
  output [3:0] sum_rca,output cout_rca);
 wire w1,w2,w3;
 // connection by order
