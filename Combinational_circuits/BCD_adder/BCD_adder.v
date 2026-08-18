@@ -1,5 +1,5 @@
 module BCD_adder(input [3:0] a_bcd,[3:0] b_bcd,input cin, 
-output [3:0] sum_bcd,output cout);
+output [3:0] sum_bcd,output cout_bcd);
 wire [3:0] sum_temp;
 wire cout_temp;
 wire a_1,a_2,o_1;
@@ -12,7 +12,7 @@ assign b_rca2[0] = 0;
 assign b_rca2[1] = o_1;
 assign b_rca2[2] = o_1;
 assign b_rca2[3] = 0;
-ripple_carry_adder rca2(sum_temp,b_rca2,0,sum_bcd,cout);
+ripple_carry_adder rca2(sum_temp,b_rca2,0,sum_bcd,cout_bcd);
 endmodule
 
 
