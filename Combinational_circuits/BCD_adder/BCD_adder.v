@@ -7,12 +7,13 @@ wire [3:0] b_rca2;
 ripple_carry_adder rca1(a_bcd,b_bcd,cin,sum_temp,cout_temp);
 and a1(a_1,sum_temp[3],sum_temp[2]);
 and a2(a_2,sum_temp[3],sum_temp[1]);
-or o1(o_1,a_1,a_2);
+or o1(o_1,a_1,a_2,cout_temp);
 assign b_rca2[0] = 0;
 assign b_rca2[1] = o_1;
 assign b_rca2[2] = o_1;
 assign b_rca2[3] = 0;
-ripple_carry_adder rca2(sum_temp,b_rca2,0,sum_bcd,cout_bcd);
+assign cout_bcd = o_1;
+ripple_carry_adder rca2(sum_temp,b_rca2,0,sum_bcd,);
 endmodule
 
 
