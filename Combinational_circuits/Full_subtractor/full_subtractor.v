@@ -1,4 +1,4 @@
-module(input a,b,bin, output differ,borrow);
+module full_subtractor(input a,b,bin, output differ,borrow);
  wire w1,w2,w3,w4,w5;
  xor x1(w1,a,b);
  xor x2(differ,w1,bin);
